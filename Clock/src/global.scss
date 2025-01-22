@@ -1,0 +1,42 @@
+//fontes
+  @font-face {
+    font-family: 'Raleway'; 
+    src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;  
+  }
+  
+  @font-face {
+    font-family: 'Raleway-Bold'; 
+    src: url('./assets/fonts/Raleway-Bold.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;  
+  }
+  
+  @font-face {
+    font-family: 'Raleway-Light'; 
+    src: url('./assets/fonts/Raleway-Light.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;  
+  }
+
+  @font-face {
+    font-family: 'Raleway-SemiBold'; 
+    src: url('./assets/fonts/Raleway-SemiBold.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;  
+  }
+
+  //cores
+  $bg-color: #ACBEFF;
+  $card-color: #5460AF;
+  $card-shadow-color: #0000004b;
+  $header-color: #1D283F;
+  $container-shadow-color: #00000081;
+
+  $high-relevance: #FF5E5E;
+  $medium-relevance: #FFDC4F;
+  $low-relevanec: #71BA28;
+
+  
+  
