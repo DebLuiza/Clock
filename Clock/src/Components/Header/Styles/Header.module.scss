@@ -13,7 +13,7 @@ $headerResponsive: 100%;
 .header {
   padding: 0 4rem;
   z-index: 9999;
-  height: 13vh;
+  height: 10vh;
   width: 100%;
   @include AllCenter;
   display: flex;
@@ -42,9 +42,11 @@ $headerResponsive: 100%;
         .img-header{
             width: 3rem;
         }
-        .other-links{
-            list-style: none;
-        }
+    }
+    .other-links{
+        display: flex;
+        gap: 1rem;
+        list-style: none;
     }
     a {
       font-family: 'RaleWay-SemiBold';
@@ -53,10 +55,9 @@ $headerResponsive: 100%;
       cursor: pointer;
       color: #fff;
       transition: 0.4s;
-      font-size: 1.3rem;
     }
     li a:hover {
-      color: $bg-color;
+      color: $hover-color;
     }
   }
 
@@ -142,20 +143,12 @@ $headerResponsive: 100%;
       left: 0px;
     }
   }
-
-  @media screen and (min-width: $w1536) {
-    .links {
-      a {
-        font-size: 1.5rem;
-      }
-    }
-  }
   
   @media screen and (max-width: $w1920) {
     padding: 0 5rem;
     .links {
       a {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
 
       }
     }
@@ -165,11 +158,18 @@ $headerResponsive: 100%;
   }
   
   @media screen and (max-width: $w1536) {
+    height: 12vh;
     padding: 0 4rem;
     .links {
       a {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
       }
+      li{
+        list-style: none;
+        .img-header{
+            width: 2.5rem;
+        }
+       }
     }
   }
   @media screen and (max-width: $w680) {
