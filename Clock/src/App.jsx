@@ -1,7 +1,8 @@
 import './global.scss'
 import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import Header from './Components/Header/Header'
-
+import MetodosEstudos from './Pages/MetodosEstudos/MetodosEstudos';
+import MainPage from './Pages/MainPage/MainPage';
 
 function App() {
 
@@ -10,10 +11,8 @@ function App() {
     <Router>
       <Header/>
       <Routes>
-        {/* <Route path='/' element={<Home/>}>
-          <Route path='Pag1' element={<Pag1/>}/>
-          <Route path='Pag2' element={<Pag2/>}/>
-        </Route> */}
+        <Route path='/' element={<MainPage/>}/>
+        <Route path='/metodos' element={<MetodosEstudos/>}/>
       </Routes>
     </Router>
     </>
