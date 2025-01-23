@@ -1,0 +1,24 @@
+@import "../../../global.scss";
+
+
+.container-tarefas{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-radius: 4%;
+    padding: 1.5rem;
+    box-shadow: 3px 3px 20px $container-shadow-color;
+    .title-part{
+        font-family: 'Raleway-Bold';
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    .scroll-part{
+        background: blue;
+        overflow: scroll;
+        max-height: 20rem;
+        .teste{
+            height: 50px;
+        }
+    }
+}

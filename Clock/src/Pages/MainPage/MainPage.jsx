@@ -1,5 +1,6 @@
 import styles from "./Styles/MainPage.module.scss";
 import PropTypes from "prop-types";
+import ItemTarefas from "../../Components/ItemTarefas/ItemTarefas";
 
 export default function MainPage({ tamHeader }) {
 
@@ -11,10 +12,11 @@ export default function MainPage({ tamHeader }) {
       style={{ height: calculatedHeight }}
     >
       <div className={styles["left-container"]}>
-
+        {/* lista de tarefas aq */}
+        <ItemTarefas/>
       </div>
       <div className={styles["right-container"]}>
-
+        {/* calendario e carossel */}
       </div>
     </div>
   );
