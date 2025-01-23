@@ -19,7 +19,7 @@ function App() {
       <Header onHeaderChange={handleHeightChange}/>
       <Routes>
         <Route path='/' element={<MainPage tamHeader={headerHeight}/>}/>
-        <Route path='/metodos' element={<MetodosEstudos/>}/>
+        <Route path='/metodos' element={<MetodosEstudos tamHeader={headerHeight}/>}/>
       </Routes>
     </Router>
     </>
