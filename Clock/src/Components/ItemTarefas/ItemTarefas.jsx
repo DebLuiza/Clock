@@ -19,7 +19,7 @@ export default function ItemTarefas() {
             <div className={styles["teste"]}>
                 aaaaaaaaaa
             </div>
-            <div className={styles["teste"]}>
+            {/* <div className={styles["teste"]}>
                 aaaaaaaaaa
             </div>
             <div className={styles["teste"]}>
@@ -45,7 +45,7 @@ export default function ItemTarefas() {
             </div>
             <div className={styles["teste"]}>
                 aaaaaaaaaa
-            </div>
+            </div> */}
             
       </div>
     </div>

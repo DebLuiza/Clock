@@ -9,7 +9,7 @@ export default function MainPage({ tamHeader }) {
   return (
     <div
       className={styles["container-main"]}
-      style={{ height: calculatedHeight }}
+      style={{ height: calculatedHeight}}
     >
       <div className={styles["left-container"]}>
         {/* lista de tarefas aq */}
