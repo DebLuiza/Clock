@@ -5,22 +5,61 @@
     height: 100%;
     width: 100%;
     background: #fff;
-    border-radius: 5%;
+    border-radius: 2.5%;
     padding: 1.5rem;
     box-shadow: 3px 3px 20px $container-shadow-color;
     .title-part{
         font-family: 'Raleway-Bold';
-        font-size: 1.7rem;
+        font-size: 2.5rem;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
     .scroll-part{
-        overflow: scroll;
+        overflow-y: auto;
+        flex-grow: 1;
         height: 100%;
-        max-height: 23rem;
+        max-height: 40rem;
         max-width: 100%;
-        .teste{
-            height: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.6rem;
+        border-radius: 10px;
+        border: 2px solid $bg-color;
+
+        &::-webkit-scrollbar {
+            width: 0.8rem;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f0f0f0;
+            border-radius: 2px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $bg-color;
+            border-radius: 2px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: $bg-color;
+        }
+
+        scrollbar-color: $bg-color #f0f0f0;
+    }
+
+    
+    @media (max-width: $w1440) {
+        border-radius: 5%;
+        .title-part{
+            font-size: 1.7rem;
+            margin-bottom: 1rem;
+        }
+        .scroll-part{
+            max-height: 23rem;
+            .teste{
+                height: 50px;
+            }
         }
     }
 }

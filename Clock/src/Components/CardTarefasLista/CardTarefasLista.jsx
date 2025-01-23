@@ -1,0 +1,21 @@
+import styles from "./Styles/CardTarefasLista.module.scss"
+import editIcon from "../../assets/Icons/editIcon.svg"
+import trashIcon from "../../assets/Icons/trashIcon.svg"
+
+export default function CardTarefasLista() {
+  return (
+    <div className={styles["card-item-tarefa"]}>
+        <div className={styles["text-part"]}>
+            Nome Tarefa
+        </div>
+        <div className={styles["buttons-part"]}>
+            <button className={styles["btn-edit"]}>
+                <img src={editIcon} alt="" />
+            </button>
+            <button className={styles["btn-excluir"]}>
+                <img src={trashIcon} alt="" />
+            </button>
+        </div>
+    </div>
+  )
+}

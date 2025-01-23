@@ -1,0 +1,52 @@
+@import "../../../global.scss";
+
+.card-item-tarefa{
+    width: 100%;
+    height: 5rem;
+    border: 2px $card-color solid;
+    background-color: $card-color;
+    border-radius: 0.7rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    box-shadow: 2px 2px 5px $card-shadow-color;
+
+
+    .text-part{
+        display: flex;
+        align-items: center;
+        font-family: 'Raleway-Bold';
+        font-size: 1.2rem;
+    }
+
+    .buttons-part{
+        @include AllCenter;
+        gap: 1rem;
+        .btn-excluir{
+            background: $high-relevance;
+        }
+        .btn-edit{
+           background-color: $medium-relevance;
+        }
+
+        button{
+            padding: 0.5rem;
+            width: 2.5rem;
+            height: 2.5rem;
+            @include AllCenter;
+            border-radius: 0.3rem;
+            border: none;
+            transition: all .4s;
+            cursor: pointer;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+
+        img{
+            width: 1.5rem;
+        }
+    }
+}

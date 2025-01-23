@@ -17,6 +17,7 @@ export default function MainPage({ tamHeader }) {
       </div>
       <div className={styles["right-container"]}>
         {/* calendario e carossel */}
+        
       </div>
     </div>
   );

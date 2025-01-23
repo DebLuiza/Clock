@@ -1,4 +1,6 @@
 import styles from "./Styles/ItemTarefas.module.scss"
+import CardTarefasLista from "../CardTarefasLista/CardTarefasLista"
+
 
 export default function ItemTarefas() {
   return (
@@ -7,46 +9,15 @@ export default function ItemTarefas() {
         Tarefas
       </div>
       <div className={styles["scroll-part"]}>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            {/* <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div>
-            <div className={styles["teste"]}>
-                aaaaaaaaaa
-            </div> */}
-            
+            <CardTarefasLista/>
+            <CardTarefasLista/>
+            <CardTarefasLista/>
+            <CardTarefasLista/>
+            <CardTarefasLista/>
+            <CardTarefasLista/>
+            <CardTarefasLista/>
+            <CardTarefasLista/>
+            <CardTarefasLista/>
       </div>
     </div>
   )
