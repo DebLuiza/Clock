@@ -9,13 +9,26 @@
         
     }
     .right-container{
-       // background: purple;
+        background: purple;
+        display: grid;
+        grid-template-rows: 32% 68%;
+        .carousel-part{
+            background: red;
+        }
+        .calendar-part{
+            background: pink;
+        }
+    }
+
+    @media (max-width: $w1920) {
+        .left-container{
+            padding: 1.5rem 2rem;
+        } 
     }
 
     @media (max-width: $w1440) {
         .left-container{
-            padding: 2rem 1.5rem;
-            
+            padding: 1rem 1.5rem;
         }
     }
 }

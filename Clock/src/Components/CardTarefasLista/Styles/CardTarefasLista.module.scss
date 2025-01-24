@@ -12,7 +12,6 @@
     color: #fff;
     box-shadow: 2px 2px 5px $card-shadow-color;
 
-
     .text-part{
         display: flex;
         align-items: center;
@@ -47,6 +46,32 @@
 
         img{
             width: 1.5rem;
+        }
+    }
+
+    @media (max-width: $w1920){
+        padding: 0.8rem 1.5rem;
+    }
+        
+    @media (max-width: $w1440) {
+        padding: 0.5rem 1rem;
+        .text-part{
+            font-size: 0.8rem;
+        }
+        .buttons-part{
+            gap: 0.5rem;
+            button{
+                padding: 0.3rem;
+                width: 2rem;
+                height: 2rem;
+                &:hover{
+                    transform: scale(1.00);
+                    filter: brightness(1.2);
+                }
+            }
+            img{
+                width: 1.2rem;
+            }
         }
     }
 }
