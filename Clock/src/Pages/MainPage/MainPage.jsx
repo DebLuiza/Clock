@@ -1,6 +1,7 @@
 import styles from "./Styles/MainPage.module.scss";
 import PropTypes from "prop-types";
 import ItemTarefas from "../../Components/ItemTarefas/ItemTarefas";
+import Carousel from "../../Components/Carousel/Carousel";
 
 export default function MainPage({ tamHeader }) {
 
@@ -17,7 +18,7 @@ export default function MainPage({ tamHeader }) {
       <div className={styles["right-container"]}>
         {/* calendario e carossel */}
         <div className={styles["carousel-part"]}>
-
+            <Carousel/>
         </div>
         <div className={styles["calendar-part"]}>
 
