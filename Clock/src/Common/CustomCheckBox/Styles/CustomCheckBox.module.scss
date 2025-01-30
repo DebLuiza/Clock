@@ -1,0 +1,54 @@
+@import "../../../global.scss";
+
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #fff;
+  border-radius: 4px;
+
+  .custom-checkbox-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .custom-checkbox-checkmark {
+    position: relative;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: $card-color;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 8px;
+      top: 4px;
+      width: 5px;
+      height: 10px;
+      border: solid $card-color;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  .custom-checkbox-input:checked ~ .custom-checkbox-checkmark {
+    background-color: #2196F3;
+
+    &:after {
+      display: block;
+    }
+  }
+
+  &:hover .custom-checkbox-checkmark {
+    background-color: #ccc;
+  }
+}

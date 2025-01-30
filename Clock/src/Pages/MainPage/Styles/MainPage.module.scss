@@ -9,11 +9,9 @@
         
     }
     .right-container{
-        background: purple;
         display: grid;
         grid-template-rows: 32% 68%;
         .carousel-part{
-            background: red;
         }
         .calendar-part{
             background: pink;

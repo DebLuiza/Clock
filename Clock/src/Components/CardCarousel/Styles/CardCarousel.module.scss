@@ -6,17 +6,17 @@
     height: 12rem;
     border-radius: 0.7rem;
     box-shadow: 2px 2px 5px $card-shadow-color;
-    padding: 0.8rem 1rem;
+    padding: 1.2rem 1rem;
 
     .upper-part{
         display: grid;
-        grid-template-columns: 90% 10%;
+        grid-template-columns: 85% 15%;
         .left-part{
             .title-part{
                 color: #fff;
                 font-family: 'Raleway-SemiBold';
                 font-size: 1.2rem;
-                margin-bottom: 0.2rem;
+                margin-bottom: 0.4rem;
             }
             .priority-part{
                 height: 0.4rem;
