@@ -25,6 +25,7 @@ export default function CalendarComponent() {
     return (
       <div className={styles["calendar-container"]}>
         <Calendar
+          className={styles["calendar"]}
           localizer={localizer}
           events={myEvents}
           startAccessor="start"
