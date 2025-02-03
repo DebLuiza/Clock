@@ -14,7 +14,8 @@
         .carousel-part{
         }
         .calendar-part{
-            background: pink;
+            @include AllCenter;
+            padding: 3rem 3rem 3rem 0;
         }
     }
 
