@@ -1,0 +1,23 @@
+@import "../../../global.scss";
+
+.rbc-toolbar{
+    .rbc-btn-group{
+        button{
+            font-family: 'Raleway-SemiBold';
+            transition: all .4s;
+            &:hover{
+                background: $hover-color;
+            }
+        }
+        .rbc-active{
+            box-shadow: none;
+            background: $button-color;
+            color: #fff;
+
+            &:hover{
+                background: $button-hover-color;
+                color: #fff;
+            }
+        }
+    }
+}
