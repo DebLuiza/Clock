@@ -3,6 +3,7 @@
 .rbc-toolbar{
     .rbc-btn-group{
         button{
+            border-color: $header-color;
             font-family: 'Raleway-SemiBold';
             transition: all .4s;
             &:hover{
@@ -23,8 +24,17 @@
 }
 
 .rbc-month-view{
+    border-color: $header-color;
+    .rbc-month-header{
+        .rbc-header{
+            border-color: $header-color;
+        }
+    }
     .rbc-month-row{
-        border-color: black;
+        border-color: $header-color;
+        .rbc-day-bg{
+            border-color: $header-color;
+        }
         .rbc-off-range-bg{
             background: $hover-color;
         }
