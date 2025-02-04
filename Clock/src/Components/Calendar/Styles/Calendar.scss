@@ -21,3 +21,12 @@
         }
     }
 }
+
+.rbc-month-view{
+    .rbc-month-row{
+        border-color: black;
+        .rbc-off-range-bg{
+            background: $hover-color;
+        }
+    }
+}
