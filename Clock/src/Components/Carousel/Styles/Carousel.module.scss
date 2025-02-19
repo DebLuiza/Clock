@@ -1,9 +1,14 @@
 @import "../../../global.scss";
 
 .my-custom-swiper {
-    width: 100%;
-    height: 400px;
-    margin: 20px 0;
+    width: 60vw;
+    display: flex;
+    background: #fff;
+    padding: 1rem;
+
+    .my-custom-card{
+      @include AllCenter;
+    }
   
     .slide-content {
       display: flex;
