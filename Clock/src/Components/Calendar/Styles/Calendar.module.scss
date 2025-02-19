@@ -3,8 +3,9 @@
 .calendar-container{
     width: 100%;
     background-color: #fff;
+    box-shadow: 3px 3px 20px $card-shadow-color;
     border-radius: 8px;
     .calendar{
-        padding: 1rem;
+        padding: 2rem;
     }
 }
