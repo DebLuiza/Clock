@@ -72,7 +72,7 @@ export default function Header({ onHeaderChange }) {
           <li>
             <Link to={"/"}>Temporizador</Link>
           </li>
-          <li>
+          <li className={styles['sair-btn']}>
             <Link to={"/"}>Sair</Link>
           </li>
         </ul>

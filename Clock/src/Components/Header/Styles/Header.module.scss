@@ -20,7 +20,7 @@ $headerResponsive: 100%;
   align-items: center;
   justify-content: space-between;
   background-color: $header-color;
-  color: #fff;
+  color: $list-color;
 
   .input-hamb,
   .hamburger-lines {
@@ -49,11 +49,11 @@ $headerResponsive: 100%;
         list-style: none;
     }
     a {
-      font-family: 'RaleWay-SemiBold';
+      font-family: 'Kodchasan-SemiBold';
       position: relative;
       text-decoration: none;
       cursor: pointer;
-      color: #fff;
+      color: $list-color;
       transition: 0.4s;
     }
     li a:hover {
@@ -138,6 +138,9 @@ $headerResponsive: 100%;
       height: 100vh;
       background-color: $header-color;
       transition: 0.3s ease-in-out;
+      .sair-btn{
+        background: $card-color2;
+      }
     }
     .active {
       left: 0px;

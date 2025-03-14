@@ -1,16 +1,45 @@
 import styles from "./Styles/MetodosEstudos.module.scss"
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 export default function MetodosEstudos({ tamHeader }) {
 
   const calculatedHeight = `calc(100vh - ${tamHeader}px)`;
+
+  const methods = [
+    { name: "Pomodoro", description: "Técnica de estudo que alterna períodos de foco com pequenas pausas." },
+    { name: "Mapas Mentais", description: "Uso de diagramas para organizar informações visualmente." },
+    { name: "Feynman", description: "Aprender explicando conceitos de forma simples." },
+    { name: "Técnica de Interrogação Elaborativa", description: "Fazer perguntas sobre o material para aprofundar a compreensão." },
+    { name: "Autoexplicação", description: "Explicar conceitos para si mesmo para reforçar o aprendizado." },
+    { name: "Método de Cornel", description: "Sistema de anotações que melhora a retenção e compreensão." },
+    { name: "Ensino a Outra Pessoa", description: "Aprender ensinando outra pessoa." },
+  ];
+
+  const [selectedMethod, setSelectedMethod] = useState(null);
 
   return (
     <div
       className={styles["container-main"]}
       style={{ height: calculatedHeight }}
     >
-      olaaaaaaaaa
+      <div className={styles["card"]}>
+        <h2>Métodos de Estudo</h2>
+        <ul>
+          {methods.map((method, index) => (
+            <li key={index} onClick={() => setSelectedMethod(method)}>{method.name}</li>
+          ))}
+        </ul>
+      </div>
+      {selectedMethod && (
+        <div className={styles["modalOverlay"]} onClick={() => setSelectedMethod(null)}>
+          <div className={styles["modal"]} onClick={(e) => e.stopPropagation()}>
+            <h3>{selectedMethod["name"]}</h3>
+            <p>{selectedMethod["description"]}</p>
+            <button className= {styles['btn-modal-metodos']} onClick={() => setSelectedMethod(null)}>Fechar</button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

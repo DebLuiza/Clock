@@ -3,8 +3,8 @@
 .rbc-toolbar{
     .rbc-btn-group{
         button{
-            border-color: $header-color;
-            font-family: 'Raleway-SemiBold';
+            border-color:  $list-color;
+            font-family: 'Kodchasan-SemiBold';
             transition: all .4s;
             &:hover{
                 background: $hover-color;
@@ -24,19 +24,27 @@
 }
 
 .rbc-month-view{
-    border-color: $header-color;
+    border-color:  $list-color;
     .rbc-month-header{
         .rbc-header{
-            border-color: $header-color;
+            border-color:  $list-color;
         }
     }
     .rbc-month-row{
-        border-color: $header-color;
+        border-color:  $list-color;
+        color: black;
         .rbc-day-bg{
-            border-color: $header-color;
+            border-color:  $list-color;
         }
         .rbc-off-range-bg{
             background: $hover-color;
+        }
+        .rbc-row-content{
+            .rbc-row {
+                button{
+                    color: black !important;
+                }
+            }
         }
     }
 }

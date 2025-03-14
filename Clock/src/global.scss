@@ -27,21 +27,51 @@
     font-style: normal;  
   }
 
+  @font-face {
+    font-family: 'Kodchasan'; 
+    src: url('./assets/fonts/Kodchasan-Regular.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;  
+  }
+  
+  @font-face {
+    font-family: 'Kodchasan-Bold'; 
+    src: url('./assets/fonts/Kodchasan-Bold.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;  
+  }
+  
+  @font-face {
+    font-family: 'Kodchasan-Light'; 
+    src: url('./assets/fonts/Kodchasan-Light.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;  
+  }
+
+  @font-face {
+    font-family: 'Kodchasan-SemiBold'; 
+    src: url('./assets/fonts/Kodchasan-SemiBold.ttf') format('truetype'); 
+    font-weight: normal; 
+    font-style: normal;  
+  }
+
   //cores
-  $bg-color: #ACBEFF;
-  $card-color: #5460AF;
+  $bg-color: #f7f7f5;
+  $card-color2: #ff5835;
+  $card-color: #fccc41;
   $card-shadow-color: #0000004b;
-  $button-color: #415566;
-  $button-hover-color: #667494;
-  $header-color: #1D283F;
+  $button-color: #ff5835;
+  $button-hover-color: #ad3c25;
+  $header-color: #f7f7f5;
   $container-shadow-color: #00000081;
-  $hover-color: #d2daf8;
-  $list-color: #eceffa;
+  $hover-color: #bd94f4;
+  $list-color: #020c30;
 
   $high-relevance: #FF5E5E;
-  $medium-relevance: #FFDC4F;
+  $medium-relevance: #ffffff;
   $low-relevanec: #71BA28;
 
+  
   
 //tamanhos de tela
   $w2500: 2500px;
