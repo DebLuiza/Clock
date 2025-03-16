@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styles from "./Styles/Header.module.scss";
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
-import ImgHeader from "../../assets/Icons/clock-vector.svg";
+import ImgHeader from "../../assets/Icons/icons2-clock.svg";
 
 export default function Header({ onHeaderChange }) {
   const headerRef = useRef(null);

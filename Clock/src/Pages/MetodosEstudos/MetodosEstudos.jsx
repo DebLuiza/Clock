@@ -24,19 +24,37 @@ export default function MetodosEstudos({ tamHeader }) {
       style={{ height: calculatedHeight }}
     >
       <div className={styles["card"]}>
+        <div className={styles["header-web-site"]}>
+          <div className={styles["circles-line"]}>
+            <div className={`${styles["circle"]} ${styles["red"]}`}></div>
+            <div className={`${styles["circle"]} ${styles["yellow"]}`}></div>
+            <div className={`${styles["circle"]} ${styles["green"]}`}></div>
+          </div>
+        </div>
         <h2>Métodos de Estudo</h2>
-        <ul>
-          {methods.map((method, index) => (
-            <li key={index} onClick={() => setSelectedMethod(method)}>{method.name}</li>
-          ))}
-        </ul>
+        <div className={styles["methods-part"]}>
+          <ul>
+            {methods.map((method, index) => (
+              <li key={index} onClick={() => setSelectedMethod(method)}>{method.name}</li>
+            ))}
+          </ul>
+        </div>
       </div>
       {selectedMethod && (
         <div className={styles["modalOverlay"]} onClick={() => setSelectedMethod(null)}>
           <div className={styles["modal"]} onClick={(e) => e.stopPropagation()}>
-            <h3>{selectedMethod["name"]}</h3>
-            <p>{selectedMethod["description"]}</p>
-            <button className= {styles['btn-modal-metodos']} onClick={() => setSelectedMethod(null)}>Fechar</button>
+            <div className={styles["header-web-site"]}>
+              <div className={styles["circles-line"]}>
+                <div className={`${styles["circle"]} ${styles["red"]}`} onClick={() => setSelectedMethod(null)}></div>
+                <div className={`${styles["circle"]} ${styles["yellow"]}`}></div>
+                <div className={`${styles["circle"]} ${styles["green"]}`}></div>
+              </div>
+            </div>
+            <div className={styles["content-part"]}>
+              <h3>{selectedMethod["name"]}</h3>
+              <p>{selectedMethod["description"]}</p>
+              <button className= {styles['btn-modal-metodos']} onClick={() => setSelectedMethod(null)}>Fechar</button>
+            </div>
           </div>
         </div>
       )}

@@ -2,17 +2,54 @@
 
 .container-main{
     background: $bg-color;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
 
     .card {
         background: #ffffff;
-        padding: 1.3rem 2.5rem;
         border-radius: 10px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         text-align: center;
         width: 60%;
+        border: 1px solid black;
+
+        .header-web-site{
+          width: 100%;
+          height: 2.3rem;
+          background-color: $bg-color2;
+          border-radius: 10px 10px 0 0;
+          display: flex;
+          border-bottom: 1px solid black;
+
+          .circles-line{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-left: 1rem;
+            .circle{
+              width: 1rem;
+              height: 1rem;
+              background: #000;
+              border-radius: 50%;
+              border: 1px solid black;
+              transition: all .3s;
+               &:hover{
+                transform: scale(1.05);
+               }
+            }
+            .red{
+              background: #f54a28;
+            }
+            .yellow{
+              background: #f5cc28;
+            }
+            .green{
+              background: #29b91f;
+            }
+          }
+        }
       
         h2 {
           margin-bottom: 1.5rem;
@@ -20,27 +57,33 @@
           font-weight: bold;
           margin-top: 1rem;
         }
-      
-        ul {
-          list-style-type: none;
-          padding: 0;
-      
-          li {
-            background: #f0f0f0;
-            border: 1px #80630d solid;
-            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-            margin-bottom: 0.5rem;
-            padding: 0.8rem;
-            border-radius: 5px;
-            font-size: 1.3rem;
-            cursor: pointer;
-            transition: all .3s;
-            &:hover{
-                transform: scale(1.03);
-                background: $card-color;
+
+        .methods-part{
+          margin:0 1.8rem 2.5rem;
+
+          ul {
+            list-style-type: none;
+            padding: 0;
+        
+            li {
+              background: #f0f0f0;
+              border: 1px $card-color3 solid;
+              box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+              margin-bottom: 0.5rem;
+              padding: 0.8rem;
+              border-radius: 5px;
+              font-size: 1.3rem;
+              cursor: pointer;
+              transition: all .3s;
+              &:hover{
+                  transform: scale(1.03);
+                  border: 1px #80630d solid;
+                  background: $card-color;
+              }
             }
           }
         }
+      
       }
 
       .modalOverlay {
@@ -57,35 +100,75 @@
       
       .modal {
         background: white;
-        padding: 2rem 1rem;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         text-align: center;
         width: 300px;
-        h3 {
-            margin-bottom: 10px;
-          }
+        border: 1px solid black;
 
-          p {
-            margin-bottom: 15px;
-          }
+        .header-web-site{
+          width: 100%;
+          height: 2.2rem;
+          background-color: $bg-color2;
+          border-radius: 8px 8px 0 0;
+          display: flex;
+          border-bottom: 1px solid black;
 
-          .btn-modal-metodos {
-            background: $button-color;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all .3s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-            &:hover {
-                background: $button-hover-color;
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.333);
-             
+          .circles-line{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-left: 1rem;
+            .circle{
+              width: 0.8rem;
+              height: 0.8rem;
+              background: #000;
+              border-radius: 50%;
+              border: 1px solid black; 
+              transition: all .3s;
+              &:hover{
+               transform: scale(1.05);
+              }
+            }
+            .red{
+              background: #f54a28;
+              cursor: pointer;
+            }
+            .yellow{
+              background: #f5cc28;
+            }
+            .green{
+              background: #29b91f;
             }
           }
+        }
+        .content-part{
+          padding: 1.3rem 2rem;
+          h3 {
+              margin-bottom: 10px;
+            }
+  
+            p {
+              margin-bottom: 15px;
+            }
+  
+            .btn-modal-metodos {
+              background: $button-color;
+              color: white;
+              border: none;
+              padding: 8px 12px;
+              border-radius: 4px;
+              cursor: pointer;
+              transition: all .3s;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+              border: 1px solid black;
+  
+              &:hover {
+                  background: $button-hover-color;
+                  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.333);
+               
+              }
+            }
+        }
       }
-      
 }

@@ -39,14 +39,25 @@ $headerResponsive: 100%;
     padding: 2rem 0;
     li{
         list-style: none;
+        @include AllCenter;
         .img-header{
-            width: 3rem;
+            width: 4rem;
+            fill: $list-color;
         }
-    }
+      }
     .other-links{
-        display: flex;
-        gap: 1rem;
-        list-style: none;
+      display: flex;
+      gap: 1rem;
+      list-style: none;
+    }
+    .sair-btn{
+      background: $card-color2;
+      padding: 0.3rem 1.3rem;
+      border-radius: 0.5rem;
+      border: 1px solid black;
+      a{
+        color: $medium-relevance;
+      }
     }
     a {
       font-family: 'Kodchasan-SemiBold';
@@ -138,9 +149,6 @@ $headerResponsive: 100%;
       height: 100vh;
       background-color: $header-color;
       transition: 0.3s ease-in-out;
-      .sair-btn{
-        background: $card-color2;
-      }
     }
     .active {
       left: 0px;
@@ -170,6 +178,7 @@ $headerResponsive: 100%;
         list-style: none;
         .img-header{
             width: 2.5rem;
+            color: red;
         }
        }
     }
