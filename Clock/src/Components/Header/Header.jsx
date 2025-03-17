@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import ImgHeader from "../../assets/Icons/icons2-clock.svg";
 
-export default function Header({ onHeaderChange }) {
+
+export default function Header({ onHeaderChange, setIsOpen }) {
   const headerRef = useRef(null);
 
   useEffect(() => {
@@ -70,7 +71,10 @@ export default function Header({ onHeaderChange }) {
             <Link to={"/metodos"}>Metodos de Estudos</Link>
           </li>
           <li>
-            <Link to={"/"}>Temporizador</Link>
+            <Link to={"/anotation"}>Anotações</Link>
+          </li>
+          <li>
+            <Link to={"/"} onClick={() => setIsOpen(true)}>Temporizador</Link>
           </li>
           <li className={styles['sair-btn']}>
             <Link to={"/"}>Sair</Link>
