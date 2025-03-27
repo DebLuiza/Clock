@@ -74,7 +74,7 @@ const TimerModal = ({ show, closeModal }) => {
             ></button>
           </div>
           <div className="modal-body">
-            <label>Escolha o tempo (segundos):</label>
+            <label className="label-temporizador">Escolha o tempo (segundos):</label>
             <input
               type="number"
               className="form-control"
