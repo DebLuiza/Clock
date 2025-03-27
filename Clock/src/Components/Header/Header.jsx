@@ -3,6 +3,7 @@ import styles from "./Styles/Header.module.scss";
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
 import ImgHeader from "../../assets/Icons/icons2-clock.svg";
+import TimerModal from '../TimerModal/TimerModal';
 
 
 export default function Header({ onHeaderChange, setIsOpen }) {
@@ -17,6 +18,8 @@ export default function Header({ onHeaderChange, setIsOpen }) {
 
   const [clicked, setClicked] = useState(false);
   const [colorChange, setColorchange] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 100) {
@@ -74,13 +77,14 @@ export default function Header({ onHeaderChange, setIsOpen }) {
             <Link to={"/anotation"}>Anotações</Link>
           </li>
           <li>
-            <Link to={"/tarefas"} onClick={() => setIsOpen(true)}>Temporizador</Link>
+            <Link to={"/tarefas"} onClick={() => setShowModal(true)}>Temporizador</Link>
           </li>
           <li className={styles['sair-btn']}>
             <Link to={"/"}>Sair</Link>
           </li>
         </ul>
       </ul>
+      <TimerModal show={showModal} closeModal={() => setShowModal(false)}/>
     </div>
   );
 }

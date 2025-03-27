@@ -9,13 +9,13 @@ const localizer = momentLocalizer(moment);
 const events = [
   {
     title: "Reunião de Equipe",
-    start: new Date(2025, 1, 5, 10, 0),
-    end: new Date(2025, 1, 5, 12, 0),
+    start: new Date(2025, 2, 28, 5, 0),
+    end: new Date(2025, 2, 28, 6, 0),
   },
   {
     title: "Apresentação do Projeto",
-    start: new Date(2025, 1, 10, 14, 0),
-    end: new Date(2025, 1, 10, 16, 0),
+    start: new Date(2025, 2, 29, 3, 0),
+    end: new Date(2025, 2, 29, 2, 0),
   },
 ];
 
