@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Styles/Anotation.module.scss'
 import PropTypes from "prop-types";
+import AnotationPostIt from '../../Components/AnotationPostIt/AnotationPostIt';
 
 export default function Anotation({ tamHeader }) {
 
@@ -11,9 +12,7 @@ export default function Anotation({ tamHeader }) {
         className={styles["container-main"]}
         style={{ height: calculatedHeight }}
     >
-        <div className={styles["post-it-note"]}>
-            <p>This folded corner works on any colored background!</p>
-        </div>
+        <AnotationPostIt text={"Testinhoooo"}/>
         <div className={styles["btn-criar"]}>
 
         </div>

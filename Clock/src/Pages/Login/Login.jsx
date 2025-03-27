@@ -7,13 +7,21 @@ import RegisterModal from "../../Components/RegisterModal/RegisterModal";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Email:", email, "Password:", password);
     navigate("/tarefas");
+  };
+
+  const openModal = () => {
+    setShowModal(true); // Exibe o modal
+  };
+
+  const closeModal = () => {
+    setShowModal(false); // Fecha o modal
   };
 
   return (
@@ -48,13 +56,13 @@ export default function Login() {
           </button>
 
           <div className={styles["registerLink"]}>
-            <p>Não tem uma conta? <span onClick={() => setIsRegisterOpen(true)}>Cadastre-se</span></p>
+            <p>Não tem uma conta? <span onClick={openModal}>Cadastre-se</span></p>
           </div>
         </form>
       </div>
 
     {/* Modal de Cadastro */}
-    <RegisterModal isOpen={isRegisterOpen} onClose={() => setIsRegisterOpen(false)} />
+    <RegisterModal show={showModal} closeModal={closeModal} />
 
     </div>
   );

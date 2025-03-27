@@ -46,6 +46,7 @@
         width: 300px;
         border: none;
         border-bottom: 1px solid #000000;
+        border-radius: 0%;
         
         &:focus {
           outline: none;
@@ -123,6 +124,33 @@
         pointer-events: none;
         opacity: 0.5;
       }
+
       
   }
-  
+    
+  .modal-footer{
+    flex-direction: column-reverse;
+
+    .btn{
+      border: 1px solid black;
+      color: black;
+    }
+
+    .btn-secondary{
+      background: $card-color3;
+
+      &:hover{
+        background: $card-color3;
+        color: #000000;
+      }
+    }
+
+    .btn-primary{
+      background: $card-color;
+
+      &:hover{
+        color: #000000;
+        background: $card-color;
+      }
+    }
+  }

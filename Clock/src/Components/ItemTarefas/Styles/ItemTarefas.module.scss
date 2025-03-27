@@ -10,9 +10,25 @@
     box-shadow: 3px 3px 20px $card-shadow-color;
     .title-part{
         font-family: 'Kodchasan-Bold';
+        position: relative;
         font-size: 2.5rem;
         text-align: center;
         margin-bottom: 2rem;
+
+        .button-addTarefa {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            max-width: 2rem;
+            max-height: 2rem;
+            border: none;
+            background: white;
+            @include AllCenter;
+            img{
+                max-width: 2rem;
+                max-height: 2rem;
+            }
+        }
     }
     .scroll-part{
         overflow-y: auto;
