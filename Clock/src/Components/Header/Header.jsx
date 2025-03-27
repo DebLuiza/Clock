@@ -58,7 +58,7 @@ export default function Header({ onHeaderChange, setIsOpen }) {
         }
       >
         <li>
-          <Link to={"/"}>
+          <Link to={"/tarefas"}>
             <img
               src={ImgHeader}
               alt="Header Icon"
@@ -74,7 +74,7 @@ export default function Header({ onHeaderChange, setIsOpen }) {
             <Link to={"/anotation"}>Anotações</Link>
           </li>
           <li>
-            <Link to={"/"} onClick={() => setIsOpen(true)}>Temporizador</Link>
+            <Link to={"/tarefas"} onClick={() => setIsOpen(true)}>Temporizador</Link>
           </li>
           <li className={styles['sair-btn']}>
             <Link to={"/"}>Sair</Link>
