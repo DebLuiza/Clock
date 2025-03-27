@@ -6,6 +6,7 @@
     position: relative;
     min-height: 10em;
     border-radius: 3px;
+    transition: .4s;
     
     &::after{
         content: "";
@@ -26,5 +27,9 @@
     border-width: 2em 2em 0 0;
     border-style: solid;
     border-color: $card-color-shadow;
+    }
+
+    &:hover{
+        transform: translateY(-5px);
     }
 }

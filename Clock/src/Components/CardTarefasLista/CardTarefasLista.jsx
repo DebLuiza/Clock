@@ -21,7 +21,7 @@ export default function CardTarefasLista() {
                 <img src={trashIcon} alt="" />
             </button>
         </div>
-        <ModalEditCreate show={showModal} closeModal={() => setShowModal(false)} />
+        <ModalEditCreate show={showModal} closeModal={() => setShowModal(false)} title={'Editar Tarefa'}/>
     </div>
   )
 }

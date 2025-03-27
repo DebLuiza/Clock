@@ -28,7 +28,7 @@ export default function ItemTarefas() {
             <CardTarefasLista/>
             <CardTarefasLista/>
       </div>
-      <ModalEditCreate show={showModal} closeModal={() => setShowModal(false)} />
+      <ModalEditCreate show={showModal} closeModal={() => setShowModal(false)} title={'Criar Tarefa'}/>
     </div>
   )
 }
