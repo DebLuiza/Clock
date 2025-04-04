@@ -1,10 +1,13 @@
 import styles from "./Styles/MetodosEstudos.module.scss"
 import PropTypes from "prop-types";
+import ModalEditCreate from "../../Common/ModalEditCreate/ModalEditCreate"
+import plusIcon from "../../assets/Icons/plus.svg"
 import { useState } from "react";
 
 export default function MetodosEstudos({ tamHeader }) {
 
   const calculatedHeight = `calc(100vh - ${tamHeader}px)`;
+  const [showModal, setShowModal] = useState(false);
 
   const methods = [
     { name: "Pomodoro", description: "Técnica de estudo que alterna períodos de foco com pequenas pausas." },
@@ -32,6 +35,9 @@ export default function MetodosEstudos({ tamHeader }) {
           </div>
         </div>
         <h2>Métodos de Estudo</h2>
+        <button onClick={() => setShowModal(true)} className={styles["button-addTarefa"]}>
+          <img src={plusIcon} alt="" />
+        </button>
         <div className={styles["methods-part"]}>
           <ul>
             {methods.map((method, index) => (
@@ -58,6 +64,7 @@ export default function MetodosEstudos({ tamHeader }) {
           </div>
         </div>
       )}
+      <ModalEditCreate show={showModal} closeModal={() => setShowModal(false)} title={'Criar Métodos'}/>
     </div>
   )
 }
