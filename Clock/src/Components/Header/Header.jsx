@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styles from "./Styles/Header.module.scss";
 import { Link } from "react-router-dom";
 import { useState, useRef, useEffect } from "react";
-import ImgHeader from "../../assets/Icons/logoClock.png";
+import ImgHeader from "../../assets/Icons/icons2-clock.svg";
 import TimerModal from '../TimerModal/TimerModal';
 
 
